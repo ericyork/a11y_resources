@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>A11Y Resources</title>
+	<style>
+    *, ::after, ::before {box-sizing: border-box;}
+    body {margin: 1em auto;background: #111;font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";line-height: 1.5;font-size:18px; color: #fff;}
+    html, body, article, section, div, h1, h2, h3, h4, h5, h6, p {margin: 0; padding: 0;}
+    section {background: #222;max-width: 150ch;margin: 1em auto; padding: 1em;border: 1px solid #777;border-radius:4px;}
+    a {transition: color .3s ease-in-out;}
+    a:link, a:visited {color: #29f9fc;}
+    a:hover, a:active {color: #bafdfe;}
+    .steps {display: grid;grid-template-columns:1fr;grid-gap: 1rem 1rem;align-items: start;}
+    .step {background: #444;max-width: 75ch;padding: 1em;border: 1px solid #777;border-radius:4px;position: relative;opacity:.8;cursor:pointer;}
+    div.step:hover {opacity: 1;}
+    .hero-content {max-width: 75ch;margin: 1em auto;padding: 0;border: none;}
+    code {background: #e0e0e0; color: #2e2e2e; padding: .2em .5em .2em .5em;}
+    h3 {margin-bottom: 0; padding-bottom: 0;}
+    h3:after {content:'\002B'; position: absolute; top: -.25rem;right: 1rem;font-size: 3rem;}
+    h3.opened:after {content: "\2212";}
+    p:not(:first-child) {margin-top: 1em;}
+    img {width: 100%; height: auto;}
+    .collapse {display: block;max-height: 0px;overflow: hidden;transition: max-height .5s cubic-bezier(0, 1, 0, 1);}
+    .collapse.show {max-height: 99em;transition: max-height .5s ease-in-out;}
+    @media screen and (min-width: 950px) {.steps{grid-template-columns:1fr 1fr;}}
+    </style>
+</head>
+<body>
+	<section>
+	<h1>A11Y Resources</h1>
+	<p>Found this list on reddit, but I didn't note the user. If you know where this came from, please let me know!</p>
+	<h2>Checklists/Guidelines</h2>
+	<ul>
+		<li><a class="autolink" href="https://a11yproject.com/checklist">https://a11yproject.com/checklist</a></li>
+		<li><a class="autolink" href="https://accessibility.18f.gov/checklist/">https://accessibility.18f.gov/checklist/</a></li>
+		<li><a class="autolink" href="https://www.wuhcag.com/wcag-checklist/">https://www.wuhcag.com/wcag-checklist/</a></li>
+		<li><a class="autolink" href="http://accessibility.voxmedia.com/?_ga=2.65644206.1089838413.1523300490-581922733.1521472181">http://accessibility.voxmedia.com/?_ga=2.65644206.1089838413.1523300490&#8211;581922733.1521472181</a></li>
+		<li><a class="autolink" href="https://www.stefanjudis.com/useful-accessibility-resources/">https://www.stefanjudis.com/useful-accessibility-resources/</a></li>
+		<li><a class="autolink" href="https://webaim.org/standards/wcag/checklist">https://webaim.org/standards/wcag/checklist</a></li>
+	</ul>
+	<h2>Alt Text</h2>
+	<ul>
+		<li><a class="autolink" href="https://axesslab.com/alt-texts/">https://axesslab.com/alt-texts/</a></li>
+		<li><a class="autolink" href="https://webaim.org/techniques/alttext/">https://webaim.org/techniques/alttext/</a></li>
+	</ul>
+	<h2>Color Accessibility</h2>
+	<ul>
+		<li><a class="autolink" href="https://www.smashingmagazine.com/2016/06/improving-color-accessibility-for-color-blind-users/">https://www.smashingmagazine.com/2016/06/improving-color-accessibility-for-color-blind-users/</a></li>
+		<li><a class="autolink" href="https://www.smashingmagazine.com/2014/10/color-contrast-tips-and-tools-for-accessibility/">https://www.smashingmagazine.com/2014/10/color-contrast-tips-and-tools-for-accessibility/</a></li>
+		<li><a class="autolink" href="https://medium.theuxblog.com/how-to-design-for-color-blindness-a6f083b08e12">https://medium.theuxblog.com/how-to-design-for-color-blindness-a6f083b08e12</a></li>
+		<li><a class="autolink" href="https://webdesign.tutsplus.com/articles/accessibility-basics-designing-for-visual-impairment--cms-27634">https://webdesign.tutsplus.com/articles/accessibility-basics-designing-for-visual-impairment&#8211;cms-27634</a></li>
+	</ul>
+	<h2>Accessible Forms</h2>
+	<ul>
+		<li><a class="autolink" href="https://blog.prototypr.io/designing-accessible-forms-82f2ea11697f">https://blog.prototypr.io/designing-accessible-forms-82f2ea11697f</a></li>
+		<li><a class="autolink" href="https://www.nomensa.com/blog/2014/more-tips-for-creating-accessible-forms">https://www.nomensa.com/blog/2014/more-tips-for-creating-accessible-forms</a></li>
+		<li><a class="autolink" href="https://www.w3.org/WAI/tutorials/forms/">https://www.w3.org/WAI/tutorials/forms/</a></li>
+	</ul>
+	<h2>Keyboard Navigation</h2>
+	<ul>
+		<li><a class="autolink" href="https://accessibility.18f.gov/keyboard/">https://accessibility.18f.gov/keyboard/</a></li>
+		<li><a class="autolink" href="https://www.nomensa.com/blog/2011/what-are-keyboard-traps">https://www.nomensa.com/blog/2011/what-are-keyboard-traps</a></li>
+		<li><a class="autolink" href="https://webaim.org/techniques/keyboard/">https://webaim.org/techniques/keyboard/</a></li>
+	</ul>
+	<h2>Accessible PDFs</h2>
+	<ul>
+		<li><a class="autolink" href="http://www.washington.edu/accessibility/documents/pdf-forms/">http://www.washington.edu/accessibility/documents/pdf-forms/</a></li>
+		<li><a class="autolink" href="https://helpx.adobe.com/acrobat/using/creating-accessible-pdfs.html">https://helpx.adobe.com/acrobat/using/creating-accessible-pdfs.html</a></li>
+		<li><a class="autolink" href="https://helpx.adobe.com/acrobat/using/create-verify-pdf-accessibility.html#check_accessibility_of_PDFs">https://helpx.adobe.com/acrobat/using/create-verify-pdf-accessibility.html#check_accessibility_of_PDFs</a></li>
+		<li><a class="autolink" href="https://webaim.org/techniques/acrobat/">https://webaim.org/techniques/acrobat/</a></li>
+	</ul>
+	<h2>Good Reads</h2>
+	<ul>
+		<li><a class="autolink" href="https://a11yproject.com/posts/myth-accessibility-is-blind-people/">https://a11yproject.com/posts/myth-accessibility-is-blind-people/</a></li>
+		<li><a class="autolink" href="https://axesslab.com/accessibility-according-to-pwd/">https://axesslab.com/accessibility-according-to-pwd/</a></li>
+		<li><a class="autolink" href="https://www.creativebloq.com/netmag/simple-introduction-web-accessibility-7116888">https://www.creativebloq.com/netmag/simple-introduction-web-accessibility-7116888</a></li>
+		<li><a class="autolink" href="https://axesslab.com/hand-tremors/">https://axesslab.com/hand-tremors/</a></li>
+	</ul>
+	<h2>Sites to Follow</h2>
+	<ul>
+		<li><a class="autolink" href="https://axesslab.com">https://axesslab.com</a></li>
+		<li><a class="autolink" href="https://a11yproject.com/">https://a11yproject.com/</a></li>
+		<li><a class="autolink" href="https://webaim.org">https://webaim.org</a></li>
+	</ul>
+	<h2>A11Y Tools</h2>
+	<p>NoCoffee Vision Simulator: <a class="autolink" href="https://bit.ly/2qmve7T">https://bit.ly/2qmve7T</a>
+	Contrast Ratio Tools:</p>
+	<ul>
+		<li><a class="autolink" href="https://webaim.org/resources/contrastchecker/">https://webaim.org/resources/contrastchecker/</a></li>
+		<li><a class="autolink" href="https://medium.com/@mds/color-contrast-crash-course-for-interface-design-a69c987abe1b">https://medium.com/@mds/color-contrast-crash-course-for-interface-design-a69c987abe1b</a></li>
+		<li><a class="autolink" href="http://contrast-finder.tanaguru.com/">http://contrast-finder.tanaguru.com/</a></li>
+	</ul>
+	<h2>Site Auditors:</h2>
+	<ul>
+		<li>Page Speed Insights</li>
+		<li>Site Improve (a paid service for full site audits, but they offer a free browser extensions for single page audits)</li>
+	</ul>
+</section>
+</body>
+</html>
